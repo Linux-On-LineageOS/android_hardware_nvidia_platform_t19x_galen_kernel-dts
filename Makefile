@@ -6,7 +6,7 @@ makefile-path := platform/t19x/galen/kernel-dts
 
 BUILD_19x_ENABLE=n
 BUILD_18x_ENABLE=n
-ifneq ($(filter y,$(CONFIG_ARCH_TEGRA_19x_SOC) $(CONFIG_ARCH_TEGRA_194_SOC)),)
+ifneq ($(filter y,$(CONFIG_ARCH_TEGRA_194_SOC)),)
 BUILD_19x_ENABLE=y
 endif
 ifneq ($(filter y,$(CONFIG_ARCH_TEGRA_18x_SOC) $(CONFIG_ARCH_TEGRA_186_SOC)),)
